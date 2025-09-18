@@ -50,7 +50,7 @@ provider "kubernetes" {
 }
 
 module "gke" {
-  source  = "terraform-google-modules/kubernetes-engine/google/"
+  source  = "terraform-google-modules/kubernetes-engine/google"
   version = ">= 38.0.1"
 
   # required variables
