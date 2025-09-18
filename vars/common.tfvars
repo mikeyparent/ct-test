@@ -1,6 +1,6 @@
 project = {
-  id             = "loyal-conduit-472415-u3"
-  name           = "My Project 15149"
+  id             = "ct-interview-472519"
+  name           = "ct-interview"
   region         = "us-west1"
   zone_primary   = "us-west1-a"
   zone_secondary = "us-west1-b"
