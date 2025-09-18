@@ -1,8 +1,8 @@
-fastapi==0.68.0
-uvicorn==0.15.0
-psycopg2-binary==2.8.6
-asyncpg==0.27.0
-requests==2.25.0
-faker==13.3.4
-PyYAML==5.3.1
-Jinja2==2.10.1
+fastapi==0.116.2
+uvicorn==0.35.0
+psycopg2-binary==2.9.10
+asyncpg==0.30.0
+requests==2.32.5
+Faker==37.8.0
+PyYAML==6.0
+Jinja2==3.1.2
