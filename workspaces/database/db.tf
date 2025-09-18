@@ -37,7 +37,12 @@ resource "google_sql_database_instance" "instance" {
       private_network                               = module.gcp-network.network_id
       enable_private_path_for_google_cloud_services = false
     }
-
+     backup_configuration {
+      enabled                            = true
+      start_time                         = "03:00"            # UTC
+      point_in_time_recovery_enabled     = true               # Postgres PITR
+      location                           = "us-central1"
+    }
     database_flags {
       name  = "max_connections"
       value = "1000"
