@@ -28,6 +28,9 @@ gcloud services enable cloudresourcemanager.googleapis.com
 gcloud services enable servicenetworking.googleapis.com
 gcloud services enable sqladmin.googleapis.com
 gcloud services enable secretmanager.googleapis.com
+gcloud services enable artifactregistry.googleapis.com
+gcloud services enable geminicloudassist.googleapis.com
+gcloud services enable cloudaicompanion.googleapis.com
 
 ```
 make kubernetes.init
@@ -37,3 +40,5 @@ make database.init
 make database.plan
 make database.apply
 ```
+
+
