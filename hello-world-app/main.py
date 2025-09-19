@@ -222,14 +222,9 @@ async def get_todo_by_id(todo_id: str):
                 "executed_query": query
             }
 
-    except Exception as e:
-        logger.error(f"Database error: {str(e)}")
-        return {
-            "status": "error",
-            "error": str(e),
-            "message": "Database query failed",
-            "executed_query": query if 'query' in locals() else None,
-            "database_uri": f"postgresql://{DATABASE_USERNAME}:{DATABASE_PASSWORD}@{DATABASE_HOST}:5432/{DATABASE_NAME}"
+   except Exception as e:
+    logger.error("Database query failed", exc_info=True)
+    raise HTTPException(status_code=500, detail="Internal server error")
         }
 
 if __name__ == "__main__":
