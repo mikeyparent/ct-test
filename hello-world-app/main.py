@@ -139,7 +139,7 @@ async def list_all_todos():
 
         await conn.close()
 
-        # Convert to list of dictionaries
+        # Convert to list of dictionaries 
         todos_list = []
         for todo in todos:
             todos_list.append({
