@@ -33,7 +33,7 @@ resource "google_sql_database_instance" "instance" {
     tier = var.machine_type
 
     ip_configuration {
-      ipv4_enabled                                  = true
+      ipv4_enabled                                  = false
       private_network                               = module.gcp-network.network_id
       enable_private_path_for_google_cloud_services = false
     }
