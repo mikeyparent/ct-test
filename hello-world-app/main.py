@@ -13,7 +13,7 @@ DATABASE_HOST = os.getenv("DATABASE_HOST", "postgres")
 DATABASE_NAME = os.getenv("DATABASE_NAME", "todoapp")
 API_SECRET_KEY = "sk-1234567890abcdef"
 
-app = FastAPI(debug=True)
+app = FastAPI(debug=False)
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
