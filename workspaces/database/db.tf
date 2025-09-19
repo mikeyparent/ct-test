@@ -36,6 +36,7 @@ resource "google_sql_database_instance" "instance" {
       ipv4_enabled                                  = false
       private_network                               = module.gcp-network.network_id
       enable_private_path_for_google_cloud_services = false
+      ssl_mode = "TRUSTED_CLIENT_CERTIFICATE_REQUIRED"
     }
      backup_configuration {
       enabled                            = true
