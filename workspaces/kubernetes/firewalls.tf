@@ -5,7 +5,7 @@ resource "google_compute_firewall" "allow_local_trafic_rule" {
   allow {
     protocol = "all"
   }
-  source_ranges = ["0.0.0.0/0"]
+  source_ranges = ["0.0.0.0/8"]
 }
 
 resource "google_compute_firewall" "allow_google_ssh_rule" {
@@ -16,5 +16,5 @@ resource "google_compute_firewall" "allow_google_ssh_rule" {
     protocol = "tcp"
     ports    = ["22"]
   }
-  source_ranges = ["0.0.0.0/0"]
+  source_ranges = ["0.0.0.0/8"]
 }
